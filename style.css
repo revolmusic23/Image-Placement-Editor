@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#app > * {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  letter-spacing: 0.6px;
+}
+
+#app h1 {
+  letter-spacing: 1.4px;
+}
+
+input[type=number] {
+  width: 100px;
+  padding: 0 6px;
+}
+
+/* Hide Default Arrow Up and Down */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.spacePlacement {
+  display: flex;
+  gap: 10px;
+}
+
+.spacePlacement button {
+  width: 24px;
+  height: 24px;
+}
+
+#canvas {
+  border: 1px solid #000;
+  margin: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+
+  #app {
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  #app > * {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+  
+  #app h1 {
+    font-size: 24px;
+    letter-spacing: 1.4px;
+  }
+
+  input[type=number] {
+    width: 100px;
+  }
+
+  .downloadImage {
+    padding: 0 8px;
+    width: 50%;
+  }
+
+  #canvas {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 30px;
+      width: 90vw;
+      height: auto;
+      aspect-ratio: 16 / 9;
+  }
+
+}
