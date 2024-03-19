@@ -32,11 +32,11 @@
         </div>
         <div class="spacePlacement">
             <label>Space Placement: </label>
-            <button @click="setImagePlacement('top')">↑</button>
-            <button @click="setImagePlacement('bottom')">↓</button>
-            <button @click="setImagePlacement('left')">←</button>
-            <button @click="setImagePlacement('right')">→</button>
-            <button @click="setImagePlacement('center')">✕</button>
+            <button @click="setImagePlacement('top')">&#8593;</button>
+            <button @click="setImagePlacement('bottom')">&#8595;</button>
+            <button @click="setImagePlacement('left')">&#8592;</button>
+            <button @click="setImagePlacement('right')">&#8594;</button>
+            <button @click="setImagePlacement('center')">&#10005;</button>
         </div>
 
         <button class="downloadImage" v-if="selectedImage" @click="downloadImage">Download as PNG</button>

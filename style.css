@@ -85,23 +85,27 @@ input[type=number] {
   }
 
   input[type=number] {
-    width: 100px;
+    width: 60px;
+  }
+
+  .spacePlacement button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .downloadImage {
     padding: 0 8px;
     width: 50%;
+    display: flex;
+    align-items: center;
   }
 
   #canvas {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-top: 30px;
-      width: 90vw;
-      height: auto;
-      aspect-ratio: 16 / 9;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
 }
